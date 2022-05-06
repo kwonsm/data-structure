@@ -23,7 +23,7 @@ public:
 	int size() const;
 
 	void append(const int& data);
-	void insert(const int& idx, int data);
+	void insert(const int& idx, const int& data);
 	int remove(const int& idx);
 
 private:

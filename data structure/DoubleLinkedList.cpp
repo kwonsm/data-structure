@@ -76,3 +76,12 @@ void DoubleLinkedList::append(const int& data)
 	cur->next = trailer;
 	print();
 }
+
+void DoubleLinkedList::insert(const int& idx, const int& data)
+{
+}
+
+int DoubleLinkedList::remove(const int& idx)
+{
+	return 0;
+}

@@ -16,7 +16,7 @@ int main() {
 }
 
 void main_single_linked_list(int n) {
-	SingleLinkedList L = SingleLinkedList();
+	SingleLinkedList S = SingleLinkedList();
 
 	for (int i = 0; i < n; i++) {
 		string input;
@@ -25,34 +25,34 @@ void main_single_linked_list(int n) {
 		if (input == "append") {
 			int data;
 			cin >> data;
-			L.append(data);
+			S.append(data);
 		}
 		else if (input == "insert") {
 			int idx;
 			int data;
 			cin >> idx;
 			cin >> data;
-			L.insert(idx, data);
+			S.insert(idx, data);
 		}
 		else if (input == "delete") {
 			int idx;
 			cin >> idx;
-			cout << L.remove(idx) << endl;
+			cout << S.remove(idx) << endl;
 		}
 		else if (input == "print") {
-			L.print();
+			S.print();
 		}
 		else if (input == "size") {
-			cout << L.size()<<endl;
+			cout << S.size()<<endl;
 		}
 		else if (input == "min") {
-			L.min();
+			S.min();
 		}
 	}
 }
 
 void main_double_linked_list(int n) {
-	DoubleLinkedList L = DoubleLinkedList();
+	DoubleLinkedList D = DoubleLinkedList();
 
 	for (int i = 0; i < n; i++) {
 		string input;
@@ -61,36 +61,37 @@ void main_double_linked_list(int n) {
 		if (input == "append") {
 			int data;
 			cin >> data;
-			L.append(data);
+			D.append(data);
 		}
 		else if (input == "insert") {
 			int idx;
 			int data;
 			cin >> idx;
 			cin >> data;
-			L.insert(idx, data);
+			D.insert(idx, data);
 		}
 		else if (input == "delete") {
 			int idx;
 			cin >> idx;
-			cout << L.remove(idx) << endl;
+			cout << D.remove(idx) << endl;
 		}
 		else if (input == "print") {
-			L.print();
+			D.print();
 		}
 		else if (input == "size") {
-			cout << L.size() << endl;
+			cout << D.size() << endl;
 		}
 		else if (input == "update") {
 			int from, to;
 			cin >> from >> to;
-			L.update(from, to);
+			D.update(from, to);
 		}
 	}
 }
 
 void main_array(int n)
 {
+
 	for (int i = 0; i < n; i++) {
 		string input;
 		cin >> input;
