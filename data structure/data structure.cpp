@@ -1,6 +1,6 @@
 ﻿#include<iostream>
 #include<string>
-#include"SingleLinkedList.h"
+//#include"SingleLinkedList.h"
 #include"DoubleLinkedList.h"
 
 using namespace std;
@@ -15,7 +15,7 @@ int main() {
 	main_double_linked_list(n);
 }
 
-void main_single_linked_list(int n) {
+/*void main_single_linked_list(int n) {
 	SingleLinkedList S = SingleLinkedList();
 
 	for (int i = 0; i < n; i++) {
@@ -49,7 +49,7 @@ void main_single_linked_list(int n) {
 			S.min();
 		}
 	}
-}
+}*/
 
 void main_double_linked_list(int n) {
 	DoubleLinkedList D = DoubleLinkedList();
@@ -97,6 +97,7 @@ void main_array(int n)
 		cin >> input;
 
 		if (input == "append") {
-			
+
 		}
+	}
 }
