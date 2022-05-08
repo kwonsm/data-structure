@@ -1,21 +1,23 @@
 ﻿#include<iostream>
 #include<string>
 //#include"SingleLinkedList.h"
-#include"DoubleLinkedList.h"
+//#include"DoubleLinkedList.h"
+#include"LinkedQueue.h"
 
 using namespace std;
 
 void main_single_linked_list(int);
 void main_double_linked_list(int);
-void main_array(int);
+void main_linked_queue(int);
 
 int main() {
 	int n;
 	cin >> n;
-	main_double_linked_list(n);
+	main_linked_queue(n);
 }
 
-/*void main_single_linked_list(int n) {
+/*
+void main_single_linked_list(int n) {
 	SingleLinkedList S = SingleLinkedList();
 
 	for (int i = 0; i < n; i++) {
@@ -50,7 +52,7 @@ int main() {
 		}
 	}
 }*/
-
+/*
 void main_double_linked_list(int n) {
 	DoubleLinkedList D = DoubleLinkedList();
 
@@ -87,17 +89,35 @@ void main_double_linked_list(int n) {
 			D.update(from, to);
 		}
 	}
-}
+}*/
 
-void main_array(int n)
+void main_linked_queue(int n)
 {
-
+	LinkedQueue Q = LinkedQueue();
 	for (int i = 0; i < n; i++) {
 		string input;
 		cin >> input;
 
-		if (input == "append") {
-
+		if (input == "len") {
+			cout << Q.len()<<endl;
+		}
+		else if (input == "first")
+		{
+			cout << Q.first()<<endl;
+		}
+		else if (input == "print")
+		{
+			Q.print();
+		}
+		else if (input == "enqueue")
+		{
+			int data; 
+			cin >> data;
+			Q.enqueue(data);
+		}
+		else if (input == "dequeue")
+		{
+			cout << Q.dequeue()<<endl;
 		}
 	}
 }
