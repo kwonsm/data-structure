@@ -144,6 +144,8 @@
     <ClCompile Include="DoubleLinkedList.cpp" />
     <ClCompile Include="LinkedQueue.cpp" />
     <ClCompile Include="MapBase.cpp" />
+    <ClCompile Include="RBtree.cpp" />
+    <ClCompile Include="Red_Black_Tree.cpp" />
     <ClCompile Include="SingleLinkedList.cpp" />
     <ClCompile Include="Tree.cpp" />
   </ItemGroup>
@@ -152,6 +154,7 @@
     <ClInclude Include="DoubleLinkedList.h" />
     <ClInclude Include="LinkedQueue.h" />
     <ClInclude Include="MapBase.h" />
+    <ClInclude Include="Red_Black_Tree.h" />
     <ClInclude Include="SingleLinkedList.h" />
     <ClInclude Include="Tree.h" />
   </ItemGroup>
